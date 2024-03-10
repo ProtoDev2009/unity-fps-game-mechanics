@@ -452,8 +452,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 610980027}
-  - component: {fileID: 610980028}
   - component: {fileID: 610980029}
+  - component: {fileID: 610980028}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -491,6 +491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7daf7dbcdd3938e41ac7ab8c08281faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 12
+  jumpCooldown: 0.5
+  airMultiplier: 0.4
+  jumpKey: 32
   playerHeight: 2
   groundDrag: 5
   groundMask:
@@ -506,7 +510,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610980026}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
